@@ -90,10 +90,10 @@ st.title("Lung Cancer Detection App")
 st.markdown("Predict if the cancer is **Benign (0)** or **Malignant(1)** based on clinical data.")
 # Input fields
 age = st.number_input("Age")
-Smoking = st.number_input("smoking")
-Coughing = st.number_input("coughing")
+smoking = st.number_input("smoking")
+coughing = st.number_input("coughing")
 # Predict button
 if st.button("Predict"):
-  input_data = np.array([[age, Smoking, Counghing]])
+  input_data = np.array([[age, smoking, counghing]])
   prediction = model.predict(input_data)[0]
   st.write("Prediction: Malignant" if prediction == 1 else "Prediction: Benign")
