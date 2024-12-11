@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1F3GGttdAQr8MIhj1NqdNBHehP0Cy_dPI
 """
 
-!pip install scikit-learn pandas matplotlib mlflow streamlit pyngrok joblib
+
 
 import pandas as pd
 
@@ -15,7 +15,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 # Path to the dataset
-dataset_path = '/content/drive/MyDrive/lung cancer detection/survey lung cancer.csv'  # Update with the actual path in your Drive
+dataset_path = 'survey lung cancer.csv'  # Update with the actual path in your Drive
 
 # Load dataset
 data = pd.read_csv(dataset_path)
