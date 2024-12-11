@@ -94,6 +94,6 @@ smoking = st.number_input("smoking")
 coughing = st.number_input("coughing")
 # Predict button
 if st.button("Predict"):
-  input_data = np.array([[age, smoking, counghing]])
+  input_data = np.array([[age, smoking, coughing]])
   prediction = model.predict(input_data)[0]
   st.write("Prediction: Malignant" if prediction == 1 else "Prediction: Benign")
