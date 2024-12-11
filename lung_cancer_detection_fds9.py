@@ -73,7 +73,6 @@ with mlflow.start_run():
   mlflow.sklearn.log_model(model, "model")
   print("Model logged in MLflow.")
 
-!mlflow ui
 
 from google.colab import output
 output.serve_kernel_port_as_window(5000)
