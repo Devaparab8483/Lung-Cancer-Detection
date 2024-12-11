@@ -62,7 +62,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy:.2f}")
 print(classification_report(y_test, y_pred))
 
-!pip install mlflow
+
 
 import mlflow
 import mlflow.sklearn
