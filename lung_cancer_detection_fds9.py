@@ -31,7 +31,7 @@ data['GENDER'] = data['GENDER'].map({'M': 1, 'F': 0})
 data['LUNG_CANCER'] = data['LUNG_CANCER'].map({'YES': 1, 'NO': 0})
 
 # Features (all except 'LUNG_CANCER')
-X = data.drop(columns=['LUNG_CANCER'])
+X = data[['AGE', 'SMOKING', 'COUGHING']]
 
 # Target variable
 y = data['LUNG_CANCER']
