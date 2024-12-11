@@ -73,7 +73,7 @@ with mlflow.start_run():
   print("Model logged in MLflow.")
 
 
-from google.colab import output
+
 output.serve_kernel_port_as_window(5000)
 
 import joblib
