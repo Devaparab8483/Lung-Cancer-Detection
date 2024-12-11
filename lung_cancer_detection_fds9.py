@@ -11,8 +11,7 @@ Original file is located at
 
 import pandas as pd
 
-from google.colab import drive
-drive.mount('/content/drive')
+
 
 # Path to the dataset
 dataset_path = 'survey lung cancer.csv'  # Update with the actual path in your Drive
