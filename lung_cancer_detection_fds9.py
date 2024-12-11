@@ -74,7 +74,7 @@ with mlflow.start_run():
 
 
 
-output.serve_kernel_port_as_window(5000)
+
 
 import joblib
 joblib.dump(model, 'logistic_regression_model.pkl')
